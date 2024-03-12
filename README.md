@@ -2,7 +2,7 @@
 #### Contador pomodoro feito em c, que pode ser utilizado para contabilizar o tempo de cada atividade. Ele por padrão é definido com *25* minutos, mas que pode ser alterado atraves dos argumentos. Ele gera um *log.csv* no final do tempo com as informações de: data, hora, nome e tempo da ativade.  
 
 **basta compilar:** *gcc main.c -o main*  
-**depois executar:** *./main* [Argumentos, caso queira usar
+**depois executar:** *./main* [Argumentos, caso queira usar]
 
 ### **Argumentos:**  
 * **"-h" ou "--help":**  
