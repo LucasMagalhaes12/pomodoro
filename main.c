@@ -22,7 +22,7 @@ Usage: pomodoro [options] ...\n\n\
 Options:\n\n\
 --help / -h                 Display this information.\n\
 --name / -n [activity name] Set name for pomodoro.\n\
---time / -t [time]          set time for pomodoro.\n");
+--time / -t [time]          set time in minutes for pomodoro.\n");
 }
 
 
@@ -113,8 +113,8 @@ void main(int numargs, char *arg[]) {
     if (!justInformation) {
         timeControl(totalTime);
         writeText("log.csv");
+        printf("Time is Over\a\n");
         for (int i=0; i<10; i++) {
-            printf("Time is Over\a\n");
             #ifdef _WIN64
                 Sleep(1000);
             #else
